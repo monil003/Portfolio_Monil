@@ -1,0 +1,122 @@
+{
+  "personal": {
+    "name": "Monil Dumasia",
+    "title": "NetSuite Techno-Functional Developer & Software Engineer",
+    "email": "monildumasia@gmail.com",
+    "phone": "+1 5197318203",
+    "location": "Hamilton, Ontario",
+    "linkedin": "https://www.linkedin.com/in/monil-dumasia/",
+    "summary": "Expert in AI-driven business automation and NetSuite development, with a proven track record of architecting AI agents and automating complex financial workflows. Detail-oriented Techno-Functional Developer with 4+ years of experience in ERP implementation, SuiteScript 2.x, and cloud-based application support. Proficient in Node.js, React, and Azure, I focus on enhancing system efficiency through high-performance integrations and intelligent data-driven insights.",
+    "collaboration": "Open for collaboration on Cloud, AI implementation, and NetSuite projects!"
+  },
+  "experience": [
+    {
+      "company": "OnCloud Consulting",
+      "role": "NetSuite Techno-Functional Developer",
+      "location": "ON, Canada",
+      "period": "July 2025 – Present",
+      "highlights": [
+        "Led detailed requirement-gathering and analysis sessions with cross-functional teams to translate business objectives into scalable, actionable NetSuite configurations and customizations.",
+        "Built robust workflow automations to streamline approval cycles, transaction processing, and data validation, reducing manual effort and minimizing system errors.",
+        "Designed custom SuiteAnalytics Workbooks, KPIs, and real-time dashboards enabling data-driven insights and improved decision-making for finance, operations, and leadership teams.",
+        "Created and optimized Saved Searches for reporting, exception tracking, scheduled notifications, and automation triggers, enhancing visibility across key business functions.",
+        "Developed integrations between NetSuite and external business applications via RESTlets, REST/SOAP APIs, and middleware tools, ensuring seamless data flow across systems.",
+        "Executed full-cycle data migration projects, including data mapping, cleansing, CSV imports, validation, and post-migration reconciliation to ensure accuracy and completeness.",
+        "AI-Driven Business Automation where I Architect and deployed AI-powered agents to automate the capture and mapping of Expense Reports and Vendor Bills, processing complex JSON data through OCR/AI models to auto-populate NetSuite records.",
+        "Delivered technical documentation, UAT support, and deployment assistance, ensuring smooth go-lives and consistent adoption of newly implemented features."
+      ]
+    },
+    {
+      "company": "Gatestone & Co. (for Rogers)",
+      "role": "Technical Support Representative",
+      "location": "ON, Canada",
+      "period": "February 2025 – July 2025",
+      "highlights": [
+        "Provided support for Rogers mobile, internet, and cable services across Linux-based environments.",
+        "Performed root cause analysis of recurring service issues, escalating to engineering teams as needed.",
+        "Collaborated cross-functionally with technical and non-technical teams to resolve complex issues, improving average resolution time by 25%.",
+        "Demonstrated strong communication skills while supporting high-priority customer escalations.",
+        "Utilized ticketing systems like JIRA and internal knowledge bases for documentation and incident tracking."
+      ]
+    },
+    {
+      "company": "UOBO",
+      "role": "Full Stack Developer (Volunteer)",
+      "location": "ON, Canada",
+      "period": "August 2023 – Present",
+      "highlights": [
+        "Designed backend services using Node.js and Python, integrating Redis for caching and performance tuning.",
+        "Implemented secure file storage and retrieval using Azure Blob Storage, ensuring scalable data handling.",
+        "Built RESTful APIs for internal ERP modules and integrated DocuSign to automate agreement workflows.",
+        "Architected React.js frontends with dynamic state management and accessibility-first design.",
+        "Developed real-time messaging modules with Redis Pub/Sub and handled async processing with queues.",
+        "Employed MongoDB and PostgreSQL for structured and semi-structured data management.",
+        "Led deployment and infrastructure configuration on Azure App Services and AWS Lambda."
+      ]
+    },
+    {
+      "company": "Crest Infosystems",
+      "role": "Software Developer",
+      "location": "Surat, India",
+      "period": "January 2022 – August 2023",
+      "highlights": [
+        "Designed and developed modern, responsive web applications using the MERN stack—MongoDB, Express.js, React.js, and Node.js.",
+        "Integrated REST APIs to enable seamless communication between frontend and backend services.",
+        "Collaborated with UX teams to convert designs into pixel-perfect, cross-browser-compatible interfaces.",
+        "Created reusable components and managed application state using Redux and Context API.",
+        "Contributed to performance optimization, debugging, and third-party plugin integration across various client projects.",
+        "Maintained clean code practices and participated in daily Agile stand-ups, peer reviews, and sprint planning meetings."
+      ]
+    },
+    {
+      "company": "The One Technology",
+      "role": "Mean Stack Developer",
+      "location": "Ahmedabad, India",
+      "period": "July 2021 – January 2022",
+      "highlights": [
+        "Built reusable and modular front-end components using Vue.js and React.js to accelerate web application development.",
+        "Implemented backend features in Node.js and MongoDB, enhancing application performance and flexibility.",
+        "Diagnosed and resolved over 20 functional and UI issues documented in Jira, improving usability and system responsiveness.",
+        "Participated in Agile sprints and collaborated with QA engineers to ensure test coverage and visual consistency.",
+        "Migrated key backend components from Parse Server to MongoDB, optimizing data handling and improving performance.",
+        "Took part in client meetings to gather requirements, present updates, and deploy enhancements across environments."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Conestoga College",
+      "location": "Waterloo, ON, CA",
+      "degree": "Post Graduate Diploma in Mobile Solution Development",
+      "period": "September 2022 – December 2023"
+    },
+    {
+      "institution": "Birla Vishwakarma Mahavidyalaya",
+      "location": "Anand, Gujarat, India",
+      "degree": "Bachelor of Technology in Computer Engineering",
+      "period": "August 2016 – July 2020"
+    }
+  ],
+  "skills": {
+    "NetSuite ERP": ["SuiteScript 2.0/2.1 (User Event, Client, Scheduled, Suitelet)", "SuiteTalk (REST/SOAP)", "SuiteFlow (Workflows)", "SuiteAnalytics", "SuiteBundler"],
+    "NetSuite Modules": ["Field Service Management (FSM)", "Expense Management", "Sales Order Processing", "Case Management"],
+    "Programming": ["SuiteScript", "Python", "Node.js", "JavaScript (ES6+)", "React.js", "Vue.js", "HTML5", "CSS3"],
+    "Databases": ["MongoDB", "SQL", "MySQL"],
+    "Cloud & DevOps": ["AWS", "Azure (Blob Storage, Functions, Redis)", "Docker", "GitHub"],
+    "Tools": ["Jira", "Postman", "Visual Studio Code", "Google Antigravity", "ChatGPT", "Gemini", "Claude"],
+    "Practices": ["REST APIs", "CI/CD", "Agile methodologies", "Root cause analysis"]
+  },
+  "projects": [
+    {
+      "name": "AI-Driven NetSuite Business Automation",
+      "period": "July 2025 – Present",
+      "description": "Enterprise AI Integration",
+      "highlights": [
+        "Architected and deployed AI-powered agents to automate the capture and mapping of Expense Reports and Vendor Bills.",
+        "Processed complex JSON data through OCR and AI models to accurately auto-populate NetSuite records.",
+        "Reduced manual entry errors and improved operational efficiency across finance departments.",
+        "Integrated seamlessly with NetSuite APIs ensuring data security and validation."
+      ]
+    }
+  ]
+}
