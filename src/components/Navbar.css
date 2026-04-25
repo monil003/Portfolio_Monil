@@ -60,10 +60,41 @@
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    padding: 1.5rem 0;
+  }
+  
   .desktop-nav {
     display: none;
   }
+  
   .mobile-toggle {
     display: block;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    border-top: 1px solid var(--glass-border);
+    background: rgba(5, 5, 5, 0.95);
+    backdrop-filter: blur(20px);
+    z-index: 999;
+  }
+
+  .mobile-nav-item {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-family: var(--mono-font);
+    font-size: 1.25rem;
+    text-align: left;
+    cursor: pointer;
+    padding: 0.5rem 0;
   }
 }

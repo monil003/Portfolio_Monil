@@ -274,28 +274,49 @@
     margin-top: 2rem;
   }
   .float-item {
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
   }
 }
 
 @media (max-width: 576px) {
-  .name {
-    font-size: 3.25rem;
+  .hero-section {
+    padding: 6rem 0;
   }
+  
+  .hero-visual {
+    min-height: 450px;
+    overflow: visible;
+  }
+
+  .nuclear-container {
+    transform: scale(0.5);
+    margin-top: -50px;
+  }
+
+  .name {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .title {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
   .cta-buttons {
     flex-direction: column;
     width: 100%;
+    gap: 1rem;
   }
+  
   .btn {
     width: 100%;
     justify-content: center;
-  }
-  .float-item {
-    width: 50px;
-    height: 50px;
-  }
-  .skill-icon-wrapper {
-    padding: 0.75rem;
   }
 }
