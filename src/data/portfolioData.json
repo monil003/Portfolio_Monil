@@ -6,8 +6,8 @@
     "phone": "+1 5197318203",
     "location": "Hamilton, Ontario",
     "linkedin": "https://www.linkedin.com/in/monil-dumasia/",
-    "summary": "Expert in AI-driven business automation and NetSuite development, with a proven track record of architecting AI agents and automating complex financial workflows. Detail-oriented Techno-Functional Developer with 4+ years of experience in ERP implementation, SuiteScript 2.x, and cloud-based application support. Proficient in Node.js, React, and Azure, I focus on enhancing system efficiency through high-performance integrations and intelligent data-driven insights.",
-    "collaboration": "Open for collaboration on Cloud, AI implementation, and NetSuite projects!"
+    "summary": "Expert in AI-driven business automation, NetSuite development, and custom Chrome Extension architecture. Proven track record of architecting AI agents and automating complex financial workflows. Detail-oriented Techno-Functional Developer with 4+ years of experience in ERP implementation, SuiteScript 2.x, and cloud-based systems. Proficient in Node.js, React, and AWS, I focus on enhancing system efficiency through high-performance integrations and intelligent data-driven insights.",
+    "collaboration": "Open for collaboration on Cloud, AI implementation, Chrome Extensions, and NetSuite projects!"
   },
   "experience": [
     {
@@ -23,6 +23,7 @@
         "Developed integrations between NetSuite and external business applications via RESTlets, REST/SOAP APIs, and middleware tools, ensuring seamless data flow across systems.",
         "Executed full-cycle data migration projects, including data mapping, cleansing, CSV imports, validation, and post-migration reconciliation to ensure accuracy and completeness.",
         "AI-Driven Business Automation where I Architect and deployed AI-powered agents to automate the capture and mapping of Expense Reports and Vendor Bills, processing complex JSON data through OCR/AI models to auto-populate NetSuite records.",
+        "Developing custom Chrome Extensions to streamline browser-based workflows and enhance productivity through automated data entry and UI enhancements.",
         "Delivered technical documentation, UAT support, and deployment assistance, ensuring smooth go-lives and consistent adoption of newly implemented features."
       ]
     },
@@ -101,8 +102,8 @@
     "NetSuite ERP": ["SuiteScript 2.0/2.1 (User Event, Client, Scheduled, Suitelet)", "SuiteTalk (REST/SOAP)", "SuiteFlow (Workflows)", "SuiteAnalytics", "SuiteBundler"],
     "NetSuite Modules": ["Field Service Management (FSM)", "Expense Management", "Sales Order Processing", "Case Management"],
     "Programming": ["SuiteScript", "Python", "Node.js", "JavaScript (ES6+)", "React.js", "Vue.js", "HTML5", "CSS3"],
-    "Databases": ["MongoDB", "SQL", "MySQL"],
-    "Cloud & DevOps": ["AWS", "Azure (Blob Storage, Functions, Redis)", "Docker", "GitHub"],
+    "Databases": ["MongoDB", "SQL", "MySQL", "PostgreSQL"],
+    "Cloud & DevOps": ["AWS", "GitHub", "Docker", "Vercel"],
     "Tools": ["Jira", "Postman", "Visual Studio Code", "Google Antigravity", "ChatGPT", "Gemini", "Claude"],
     "Practices": ["REST APIs", "CI/CD", "Agile methodologies", "Root cause analysis"]
   },

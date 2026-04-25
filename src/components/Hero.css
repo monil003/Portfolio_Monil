@@ -2,15 +2,37 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 4rem;
+  padding: 8rem 0;
+  position: relative;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+
+/* Isometric Grid Background */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: 
+    linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  transform: perspective(1000px) rotateX(60deg) rotateZ(-45deg);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .hero-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 4rem;
   width: 100%;
+  position: relative;
+  z-index: 10;
 }
 
 .hero-text {
@@ -46,8 +68,8 @@
   font-size: 1.1rem;
   color: var(--text-secondary);
   margin-bottom: 3.5rem;
-  max-width: 550px;
-  line-height: 1.6;
+  max-width: 580px;
+  line-height: 1.7;
 }
 
 .cta-buttons {
@@ -55,87 +77,180 @@
   gap: 1.5rem;
 }
 
-/* Nuclear Visual Styles */
+/* Isometric Visual Styles */
 .hero-visual {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  min-height: 500px;
+  min-height: 600px;
+  transform-style: preserve-3d;
+  perspective: 1000px;
 }
 
 .nuclear-container {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transform-style: preserve-3d;
 }
 
 .nuclear-core {
-  width: 80px;
-  height: 80px;
-  background: radial-gradient(circle, var(--accent-color) 0%, transparent 70%);
-  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  background: white;
+  border: 2px solid var(--accent-color);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 5;
-  box-shadow: 0 0 50px var(--accent-color);
+  box-shadow: 0 0 60px rgba(59, 130, 246, 0.4);
+  transform: rotateY(-20deg) rotateX(10deg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  overflow: hidden;
+}
+
+.core-logo-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+}
+
+.core-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: scale(1.1); /* Slight zoom to remove margins, no clipping */
+  mix-blend-mode: multiply; /* Removes white background if image has any fake ones */
+  filter: contrast(1.5) brightness(1.1); /* Blows out light grey checkerboards */
 }
 
 .core-inner {
-  width: 30px;
-  height: 30px;
-  background: white;
-  border-radius: 50%;
-  box-shadow: 0 0 20px white;
+  width: 100%;
+  height: 100%;
+  background: var(--accent-gradient);
+  opacity: 0.05;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
 }
 
+/* Radial Float Styles */
 .tech-stack-floating {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
+  transform-style: preserve-3d;
 }
 
 .skill-wrapper {
-  z-index: 10;
-}
-
-.float-item {
-  display: block;
-  background: rgba(15, 15, 15, 0.9);
-  backdrop-filter: blur(12px);
-  padding: 0.6rem 1.25rem;
-  border-radius: 50px;
-  border: 1px solid var(--glass-border);
-  font-family: var(--mono-font);
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: var(--text-primary);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  white-space: nowrap;
-}
-
-/* This creates a line that points to the center of the nuclear-container */
-.connection-line {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100px; /* Adjust based on positioning */
+  width: 0;
+  height: 0;
+  z-index: 10;
+  transform-style: preserve-3d;
+}
+
+.connection-line {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 1px;
-  background: linear-gradient(to right, var(--accent-color), transparent);
+  border-top: 2px dotted rgba(255, 255, 255, 0.2);
   transform-origin: left center;
   z-index: -1;
-  opacity: 0.3;
   pointer-events: none;
 }
 
-/* Media Queries */
+.float-item-container {
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+}
+
+.float-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 75px;
+  height: 75px;
+  border-radius: 12px;
+  box-shadow: 
+    -5px 5px 0px rgba(0,0,0,0.2),
+    -10px 10px 20px rgba(0,0,0,0.1);
+  border: 1px solid #ddd;
+  position: relative;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.float-item:hover {
+  box-shadow: 
+    -2px 2px 0px rgba(0,0,0,0.2),
+    -5px 5px 30px rgba(59, 130, 246, 0.5);
+  z-index: 50;
+}
+
+.skill-icon-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.skill-icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.skill-tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-family: var(--mono-font);
+  font-size: 0.75rem;
+  white-space: nowrap;
+  pointer-events: none;
+  border: 1px solid var(--accent-color);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  z-index: 20;
+}
+
+/* Isometric Cubes for background accents */
+.bg-cube {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  transform: perspective(1000px) rotateX(60deg) rotateZ(-45deg);
+  z-index: 1;
+}
+
 @media (max-width: 1100px) {
   .name {
     font-size: 4rem;
@@ -158,6 +273,10 @@
     width: 100%;
     margin-top: 2rem;
   }
+  .float-item {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -171,5 +290,12 @@
   .btn {
     width: 100%;
     justify-content: center;
+  }
+  .float-item {
+    width: 50px;
+    height: 50px;
+  }
+  .skill-icon-wrapper {
+    padding: 0.75rem;
   }
 }
